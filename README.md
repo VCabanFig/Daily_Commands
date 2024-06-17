@@ -10,7 +10,7 @@ awk 'NR%4==2 {sum += length($0)} END {print sum}' file.fastq
 #### Count the number of reads in fastq file:
 
 ```
-echo $(cat barcode01.fastq|wc -l)/4|bc
+echo $(cat file.fastq|wc -l)/4|bc
 ```
 
 
